@@ -1,12 +1,20 @@
 {
   "canisters": {
-    "bitacoraVuelo_backend": {
-      "main": "src/bitacoraVuelo_backend/main.mo",
+    "piloto_backend": {
+      "main": "src/bitacoraVuelo_backend/piloto.mo",
+      "type": "motoko"
+    },
+    "avion_backend": {
+      "main": "src/bitacoraVuelo_backend/avion.mo",
+      "type": "motoko"
+    },
+    "operaciones_backend": {
+      "main": "src/bitacoraVuelo_backend/operaciones.mo",
       "type": "motoko"
     },
     "bitacoraVuelo_frontend": {
       "dependencies": [
-        "bitacoraVuelo_backend"
+        "operaciones_backend"
       ],
       "source": [
         "src/bitacoraVuelo_frontend/dist"
