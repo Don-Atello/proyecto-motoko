@@ -40,12 +40,12 @@ let aviones = HashMap.HashMap<Text, Avion>(5, Text.equal, Text.hash);
    aviones.put(matricula,newAvion);
  };
 
-    // Método para eliminar un estudiante por índice
+    // Método para eliminar un avion por índice
   public func deleteAvion(index: Text): async ?Avion {
     return aviones.remove(index);
   };
 
-  // Método para listar todos los estudiantes
+  // Método para listar todos los avion
   public query func listAviones(): async  [(Text, Avion)] {
     let iter : Iter.Iter<(Text, Avion)> = aviones.entries();
     Iter.toArray<(Text, Avion)>(iter);  
