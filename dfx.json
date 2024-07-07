@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "bitacoraVuelo_backend": {
+      "main": "src/bitacoraVuelo_backend/main.mo",
+      "type": "motoko"
+    },
+    "bitacoraVuelo_frontend": {
+      "dependencies": [
+        "bitacoraVuelo_backend"
+      ],
+      "source": [
+        "src/bitacoraVuelo_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "bitacoraVuelo_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
